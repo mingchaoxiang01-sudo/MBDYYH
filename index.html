@@ -38,14 +38,26 @@
       text-decoration: none;
       transition: transform 0.2s;
       line-height: 1.6;
+      margin-top: 10px;
     }
     .cta-btn:hover {
       transform: scale(1.05);
     }
+    .arrow {
+      font-size: 24px;
+      color: #ff3b3f;
+      animation: blink 1s infinite;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
     .small-text {
       font-size: 12px;
       color: #ccc;
-      margin-top: 10px;
+      margin-top: 20px;
       line-height: 1.4;
     }
   </style>
@@ -58,16 +70,17 @@
     <!-- 内容说明 -->
     <p>
       Exclusive content, only available here.<br>
-      Tap the button below to unlock the full video.<br>
       A little surprise is waiting – don’t miss it! 🔥
     </p>
 
-    <!-- CTA按钮，多语言，无前缀 -->
+    <!-- 闪烁箭头提示 -->
+    <div class="arrow">⬇ Click the button below! ⬇</div>
+
+    <!-- CTA按钮，多语言 -->
     <a href="https://www.passingcars.wiki/?sl=5998807-6f268&pub_click_id={External_ID_from_traffic_source}&site={subID}&pub_sub_id={sub_subID}" class="cta-btn">
       Unlock Now ⬇<br>
       立即解锁 ⬇<br>
-      Mở ngay ⬇<br>
-      点击这个按钮解锁内容！
+      Mở ngay ⬇
     </a>
 
     <!-- 小字提示，多语言 -->
