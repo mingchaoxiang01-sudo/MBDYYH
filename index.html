@@ -20,8 +20,11 @@
       padding: 15px;
     }
 
+    /* 图片高度限制，保持宽度自适应 */
     .hero-img {
       width: 100%;
+      max-height: 250px; /* 限制高度 */
+      object-fit: cover;  /* 按比例裁剪填充 */
       border-radius: 12px;
       margin-bottom: 15px;
     }
